@@ -1,0 +1,267 @@
+html{
+    height: 100%;
+    margin: 0;
+    background-color: rgb(31, 30, 30);
+}
+
+header{
+    display:flex;
+    text-align: center;
+    align-items:center;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 0;
+    height: 100px;
+}
+
+header img{
+    height: 100%;
+    width: auto;
+}
+
+.head{
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.head a button{
+    border-radius: 30px;
+    border: 1px solid black;
+    height: 35px;
+    width: 140px;
+    text-align: center;
+    font-size: 18px;
+    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 200px;
+}
+
+.head a button:hover{
+    background-color: rgb(163, 156, 156);
+}
+
+#leng{
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 30px;
+    height: 35px;
+    width: 140px;
+    background-color: rgb(19, 18, 18);
+    color: azure;
+    font-size: 18px;
+    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.slider{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 60%;
+    width: 100%;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.slides{
+    display: flex;
+    width: 200%;
+    animation: slide 15s infinite;
+}
+
+
+.slides{
+    width: 16.66%;
+    filter: blur(8px);
+    height: auto;
+}
+
+.slides img{
+    width:300%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+    margin: 0
+}
+
+.carru{
+    display: flex;
+    align-items: center;
+    padding:30px;
+}
+
+.carrus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrus img {
+    height: auto;
+    border-radius: 30px;
+    width: 50%;
+    object-fit: cover;
+    transition: opacity 0.8s ease;
+    display: none; /* Ocultar todas las imágenes por defecto */
+}
+
+.carrus img.active {
+    display: block; /* Mostrar solo la imagen activa */
+}
+
+.parrafo{
+    display: flex;
+    font-size: 20px;
+    color: rgb(237, 243, 248);
+    justify-content: center;
+    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.email-section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.email-section input{
+    display: flex;
+    background-color: #33353ae1;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 20px;
+    height: 10px;
+    width: 250px;
+    border: none;
+    font-size: 18px;
+    border: 1px solid rgb(25, 247, 25);
+    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.email-section button{
+   display: flex;
+   text-decoration: none;
+   text-align: center;
+   border: none;
+   align-items: center;
+   padding: 25px;
+   height: 20px;
+   width: 125px;
+   font-weight:bold;
+   background-color: rgb(229, 9, 20);
+   color: aliceblue;
+   border-radius: 100px;
+   cursor: pointer;
+   font-size: 18px;;
+   font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.email-section button:hover{
+    background-color: rgb(161, 26, 32);
+}
+
+.caja{
+    display: flex;
+    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    height: auto;
+    width: 100vh;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 35px;
+    transition: 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.26); /* Fondo blanco con 50% de transparencia */
+    backdrop-filter: blur(10px); /* Difumina el fondo */
+}
+
+.caja:hover{
+    width: 125vh;
+    padding: 10px;
+    transition: 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+.caja h3{
+    color: aliceblue;
+    font-weight: bolder;
+}
+.caja h4{
+    color: rgb(14, 15, 15);
+    font-weight: bold;
+}
+
+.caja button{
+   text-decoration: none;
+   display: flex;
+   text-align: center;
+   border: none;
+   align-items: center;
+   padding: 25px;
+   height: 20px;
+   width: 125px;
+   font-weight:bold;
+   background-color: rgb(28, 28, 29);
+   color: aliceblue;
+   border-radius: 100px;
+   cursor: pointer;
+   font-size: 18px;;
+   font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.caja button:hover{
+    border: 1px solid aliceblue;
+    height: 40px;
+    width: 130px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1200px) {
+    .slider {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .slider {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 767px) {
+    .slider {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
